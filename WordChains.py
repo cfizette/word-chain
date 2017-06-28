@@ -217,50 +217,20 @@ class BinaryChain:
         root = WordNode(' '.join(TXT[0:degree]))
 
         # Add the start of the sequence to get it going
-        for i in range(1, degree):
+        for i in range(0, degree):
             node = WordNode(' '.join(TXT[i:degree+i]))
             root.add(node)
             # New Method----
-            #frame.append(node)
+            frame.append(node)
 
         # Add the rest of the tokens
         for i in range(degree, len(TXT)):
-            print i
-            # Old Method
-            # Calculate previous sequence and current one
-            s_prev = ' '.join(TXT[i-degree:i])
-            s = ' '.join(TXT[i:i+degree])
-            new_node = WordNode(s)
-            root.find(s_prev).add_followers(s)
-            #print 'prev is: ' + s_prev
-            #s = ' '.join(TXT[i:i+degree])
-            #print 'current is ' + s
-            # Add this word to the previous words followers
-            # print next((w for w in wordChain if w.text == s_prev)).followers
-
-            # New Method Draft
-            # s = ' '.join(TXT[i:i + degree])
-            # new_node = WordNode(s)
-            # old_instance = root.find(s)
-            # if old_instance is None:
-            #     root.add(new_node)
-            #     # print s[0]
-            #     # print s[1]
-            #     if degree == 1:
-            #         if s[0].isupper():
-            #             self.capitalWords.append(s)
-            #
-            #     elif s[0].isupper() and s[1].islower():
-            #         self.capitalWords.append(s)
-            # else:
-            #     new_node = old_instance   # attempt to make sure the old object is the one getting changed
-
-            # frame.append(new_node)
-            # frame[0].add_followers(s)
-            # frame.pop(0)  # remove first element
-
-            # if the word has not been seen before, add to the tree
-            if root.find(s) is None:
+            if i % 1000 == 0:
+                print i
+            s = ' '.join(TXT[i:i + degree])
+            old_instance = root.find(s)
+            if old_instance is None:
+                new_node = WordNode(s)
                 root.add(new_node)
                 # print s[0]
                 # print s[1]
@@ -270,13 +240,17 @@ class BinaryChain:
 
                 elif s[0].isupper() and s[1].islower():
                     self.capitalWords.append(s)
-
+            else:
+                new_node = old_instance   # attempt to make sure the old object is the one getting changed
+            frame.append(new_node)
+            frame[0].add_followers(s)
+            frame.pop(0)  # remove first element
         self.root = root
 
     def generate_text(self, seed_array, num, continuous=True, print_to_console=False):
         generated = 0
         text = ''  # Text to be returned
-        #print self.capitalWords
+        print self.capitalWords
 
         if seed_array is None:  # if no seed is given, choose a starting phrase from the markov chain
             word = self.root.find(np.random.choice(self.capitalWords))

@@ -12,11 +12,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MarkovChainCreator.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MarkovChainCreator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MarkovChainCreator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordChains.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WordChains.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WordChains.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="204" column="30" lean-forward="false" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+            <state relative-caret-position="493">
+              <caret line="235" column="28" lean-forward="true" selection-start-line="235" selection-start-column="28" selection-end-line="235" selection-end-column="28" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#135#1321#0" expanded="false" />
@@ -72,7 +72,6 @@
                 <element signature="e#6082#6206#0" expanded="false" />
                 <element signature="e#6115#6206#0" expanded="false" />
                 <element signature="e#6251#6374#0" expanded="false" />
-                <element signature="e#6684#8881#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -87,6 +86,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -94,12 +96,12 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/test2.py" />
         <option value="$PROJECT_DIR$/speeches.txt" />
-        <option value="$PROJECT_DIR$/WordChains.py" />
         <option value="$PROJECT_DIR$/script.py" />
         <option value="$PROJECT_DIR$/TextFiles/MarkovChainTester.py" />
         <option value="$PROJECT_DIR$/MarkovChainTester.py" />
-        <option value="$PROJECT_DIR$/MarkovChainCreator.py" />
         <option value="$PROJECT_DIR$/GraphicalTrumpGenerator.py" />
+        <option value="$PROJECT_DIR$/MarkovChainCreator.py" />
+        <option value="$PROJECT_DIR$/WordChains.py" />
       </list>
     </option>
   </component>
@@ -124,7 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -139,11 +140,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHubDesktop/GitHub Desktop.exe" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -366,12 +369,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4158215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4158215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -397,14 +401,178 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TrumpChain.py">
+    <entry file="file://$PROJECT_DIR$/MarkovChainCreator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="109" column="16" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarkovChainTester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TextGeneratorApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding>
+            <element signature="e#1#45#0" expanded="true" />
+            <element signature="e#1234#2193#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WordChains.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="204" column="30" lean-forward="false" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#135#1321#0" expanded="false" />
+            <element signature="e#817#1219#0" expanded="false" />
+            <element signature="e#1260#1321#0" expanded="false" />
+            <element signature="e#1342#3763#0" expanded="false" />
+            <element signature="e#1402#1526#0" expanded="false" />
+            <element signature="e#1703#1799#0" expanded="false" />
+            <element signature="e#1855#1920#0" expanded="false" />
+            <element signature="e#1980#2918#0" expanded="false" />
+            <element signature="e#3786#6018#0" expanded="false" />
+            <element signature="e#3872#4085#0" expanded="false" />
+            <element signature="e#4131#4474#0" expanded="false" />
+            <element signature="e#4519#4921#0" expanded="false" />
+            <element signature="e#4963#5024#0" expanded="false" />
+            <element signature="e#5059#5519#0" expanded="false" />
+            <element signature="e#5555#6018#0" expanded="false" />
+            <element signature="e#6082#6206#0" expanded="false" />
+            <element signature="e#6115#6206#0" expanded="false" />
+            <element signature="e#6251#6374#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarkovChainCreator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarkovChainTester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextGeneratorApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding>
+            <element signature="e#1#45#0" expanded="true" />
+            <element signature="e#1234#2193#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WordChains.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="204" column="30" lean-forward="false" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#135#1321#0" expanded="false" />
+            <element signature="e#817#1219#0" expanded="false" />
+            <element signature="e#1260#1321#0" expanded="false" />
+            <element signature="e#1342#3763#0" expanded="false" />
+            <element signature="e#1402#1526#0" expanded="false" />
+            <element signature="e#1703#1799#0" expanded="false" />
+            <element signature="e#1855#1920#0" expanded="false" />
+            <element signature="e#1980#2918#0" expanded="false" />
+            <element signature="e#3786#6018#0" expanded="false" />
+            <element signature="e#3872#4085#0" expanded="false" />
+            <element signature="e#4131#4474#0" expanded="false" />
+            <element signature="e#4519#4921#0" expanded="false" />
+            <element signature="e#4963#5024#0" expanded="false" />
+            <element signature="e#5059#5519#0" expanded="false" />
+            <element signature="e#5555#6018#0" expanded="false" />
+            <element signature="e#6082#6206#0" expanded="false" />
+            <element signature="e#6115#6206#0" expanded="false" />
+            <element signature="e#6251#6374#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarkovChainCreator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarkovChainTester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextGeneratorApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding>
+            <element signature="e#1#45#0" expanded="true" />
+            <element signature="e#1234#2193#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WordChains.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="204" column="30" lean-forward="false" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#135#1321#0" expanded="false" />
+            <element signature="e#817#1219#0" expanded="false" />
+            <element signature="e#1260#1321#0" expanded="false" />
+            <element signature="e#1342#3763#0" expanded="false" />
+            <element signature="e#1402#1526#0" expanded="false" />
+            <element signature="e#1703#1799#0" expanded="false" />
+            <element signature="e#1855#1920#0" expanded="false" />
+            <element signature="e#1980#2918#0" expanded="false" />
+            <element signature="e#3786#6018#0" expanded="false" />
+            <element signature="e#3872#4085#0" expanded="false" />
+            <element signature="e#4131#4474#0" expanded="false" />
+            <element signature="e#4519#4921#0" expanded="false" />
+            <element signature="e#4963#5024#0" expanded="false" />
+            <element signature="e#5059#5519#0" expanded="false" />
+            <element signature="e#5555#6018#0" expanded="false" />
+            <element signature="e#6082#6206#0" expanded="false" />
+            <element signature="e#6115#6206#0" expanded="false" />
+            <element signature="e#6251#6374#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrumpChain.py" />
     <entry file="file://$PROJECT_DIR$/TextGeneratorApp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -440,19 +608,11 @@
             <element signature="e#6082#6206#0" expanded="false" />
             <element signature="e#6115#6206#0" expanded="false" />
             <element signature="e#6251#6374#0" expanded="false" />
-            <element signature="e#6684#8881#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt" />
     <entry file="file://$PROJECT_DIR$/MarkovChainCreator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -463,14 +623,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpChain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="109" column="16" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TrumpChain.py" />
     <entry file="file://$PROJECT_DIR$/MarkovChainCreator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -505,19 +658,11 @@
             <element signature="e#6082#6206#0" expanded="false" />
             <element signature="e#6115#6206#0" expanded="false" />
             <element signature="e#6251#6374#0" expanded="false" />
-            <element signature="e#6684#8881#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt" />
     <entry file="file://$PROJECT_DIR$/TextGeneratorApp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -529,14 +674,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpChain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="109" column="16" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TrumpChain.py" />
     <entry file="file://$PROJECT_DIR$/MarkovChainCreator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -547,21 +685,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/speeches.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="228" lean-forward="false" selection-start-line="9" selection-start-column="228" selection-end-line="9" selection-end-column="228" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/speeches.txt" />
+    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt" />
     <entry file="file://$PROJECT_DIR$/WordChains.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -586,19 +711,11 @@
             <element signature="e#6082#6206#0" expanded="false" />
             <element signature="e#6115#6206#0" expanded="false" />
             <element signature="e#6251#6374#0" expanded="false" />
-            <element signature="e#6684#8881#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpChain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="109" column="16" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TrumpChain.py" />
     <entry file="file://$PROJECT_DIR$/WordChains.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -623,19 +740,11 @@
             <element signature="e#6082#6206#0" expanded="false" />
             <element signature="e#6115#6206#0" expanded="false" />
             <element signature="e#6251#6374#0" expanded="false" />
-            <element signature="e#6684#8881#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt" />
     <entry file="file://$PROJECT_DIR$/MarkovChainCreator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -646,89 +755,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpChain.py">
+    <entry file="file://$PROJECT_DIR$/TrumpChain.py" />
+    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt" />
+    <entry file="file://$PROJECT_DIR$/TrumpChain.py" />
+    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt" />
+    <entry file="file://$PROJECT_DIR$/TrumpChain.py" />
+    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt" />
+    <entry file="file://$PROJECT_DIR$/speeches.txt" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/test2.py" />
+    <entry file="file://$PROJECT_DIR$/TextFiles/MarkovChainTester.py" />
+    <entry file="file://$PROJECT_DIR$/TextGeneratorApp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding>
+            <element signature="e#1#45#0" expanded="true" />
+            <element signature="e#1234#2193#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrumpChain.py" />
+    <entry file="file://$PROJECT_DIR$/MarkovChainTester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpChain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpChain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpTweets.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/speeches.txt">
+    <entry file="file://$PROJECT_DIR$/MarkovChainCreator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="9" column="228" lean-forward="false" selection-start-line="9" selection-start-column="228" selection-end-line="9" selection-end-column="228" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TextFiles/MarkovChainTester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WordChains.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="204" column="30" lean-forward="false" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+        <state relative-caret-position="493">
+          <caret line="235" column="28" lean-forward="true" selection-start-line="235" selection-start-column="28" selection-end-line="235" selection-end-column="28" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#135#1321#0" expanded="false" />
@@ -749,45 +819,7 @@
             <element signature="e#6082#6206#0" expanded="false" />
             <element signature="e#6115#6206#0" expanded="false" />
             <element signature="e#6251#6374#0" expanded="false" />
-            <element signature="e#6684#8881#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MarkovChainCreator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MarkovChainTester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TextGeneratorApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding>
-            <element signature="e#1#45#0" expanded="true" />
-            <element signature="e#1234#2193#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrumpChain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="140" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -8,7 +8,7 @@ import sys
 from WordChains import Word, WordNode, Chain, BinaryChain
 
 
-# use if getting ascii error... i guess
+# use if getting ascii error... i guess...
 reload(sys)
 sys.setdefaultencoding('utf8')
 
