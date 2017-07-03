@@ -8,8 +8,9 @@ Contains Python classes for analyzing text files and generating text
 
 Examples of functions:
 ```
+# creating a markov chain of degree *d* from string *txt*
 chain = MarkovChain()
-chain.get_words(txt, deg)
+chain.get_words(txt, d)
 ```
 
 #### Markov Chain Creator
