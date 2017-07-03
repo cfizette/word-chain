@@ -6,10 +6,10 @@ A Python tool for generating text using Markov chains
 #### WordChain.py
 Contains Python classes for analyzing text files and generating text
 Examples of functions:
-'''
+```
 ksjdf
 kjsdfk
-'''
+```
 
 #### Markov Chain Creator
 Script for creating a Markov chain from text files
