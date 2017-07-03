@@ -32,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextGeneratorApp.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TextGeneratorApp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TextGeneratorApp.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordChains.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WordChains.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WordChains.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="78" column="13" lean-forward="false" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+            <state relative-caret-position="444">
+              <caret line="134" column="50" lean-forward="false" selection-start-line="134" selection-start-column="50" selection-end-line="134" selection-end-column="50" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#174#387#0" expanded="false" />
@@ -58,10 +58,10 @@
                 <element signature="e#1265#1326#0" expanded="false" />
                 <element signature="e#1361#1821#0" expanded="false" />
                 <element signature="e#1857#2320#0" expanded="false" />
-                <element signature="e#2347#5894#0" expanded="false" />
                 <element signature="e#2384#2508#0" expanded="false" />
                 <element signature="e#2417#2508#0" expanded="false" />
                 <element signature="e#2553#2600#0" expanded="false" />
+                <element signature="e#2910#4092#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -90,8 +90,8 @@
         <option value="$PROJECT_DIR$/TextFiles/MarkovChainTester.py" />
         <option value="$PROJECT_DIR$/MarkovChainTester.py" />
         <option value="$PROJECT_DIR$/GraphicalTrumpGenerator.py" />
-        <option value="$PROJECT_DIR$/WordChains.py" />
         <option value="$PROJECT_DIR$/MarkovChainCreator.py" />
+        <option value="$PROJECT_DIR$/WordChains.py" />
       </list>
     </option>
   </component>
@@ -430,10 +430,10 @@
             <element signature="e#1265#1326#0" expanded="false" />
             <element signature="e#1361#1821#0" expanded="false" />
             <element signature="e#1857#2320#0" expanded="false" />
-            <element signature="e#2347#5894#0" expanded="false" />
             <element signature="e#2384#2508#0" expanded="false" />
             <element signature="e#2417#2508#0" expanded="false" />
             <element signature="e#2553#2600#0" expanded="false" />
+            <element signature="e#2910#4092#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -477,10 +477,10 @@
             <element signature="e#1265#1326#0" expanded="false" />
             <element signature="e#1361#1821#0" expanded="false" />
             <element signature="e#1857#2320#0" expanded="false" />
-            <element signature="e#2347#5894#0" expanded="false" />
             <element signature="e#2384#2508#0" expanded="false" />
             <element signature="e#2417#2508#0" expanded="false" />
             <element signature="e#2553#2600#0" expanded="false" />
+            <element signature="e#2910#4092#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -524,10 +524,10 @@
             <element signature="e#1265#1326#0" expanded="false" />
             <element signature="e#1361#1821#0" expanded="false" />
             <element signature="e#1857#2320#0" expanded="false" />
-            <element signature="e#2347#5894#0" expanded="false" />
             <element signature="e#2384#2508#0" expanded="false" />
             <element signature="e#2417#2508#0" expanded="false" />
             <element signature="e#2553#2600#0" expanded="false" />
+            <element signature="e#2910#4092#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -571,10 +571,10 @@
             <element signature="e#1265#1326#0" expanded="false" />
             <element signature="e#1361#1821#0" expanded="false" />
             <element signature="e#1857#2320#0" expanded="false" />
-            <element signature="e#2347#5894#0" expanded="false" />
             <element signature="e#2384#2508#0" expanded="false" />
             <element signature="e#2417#2508#0" expanded="false" />
             <element signature="e#2553#2600#0" expanded="false" />
+            <element signature="e#2910#4092#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -603,10 +603,10 @@
             <element signature="e#1265#1326#0" expanded="false" />
             <element signature="e#1361#1821#0" expanded="false" />
             <element signature="e#1857#2320#0" expanded="false" />
-            <element signature="e#2347#5894#0" expanded="false" />
             <element signature="e#2384#2508#0" expanded="false" />
             <element signature="e#2417#2508#0" expanded="false" />
             <element signature="e#2553#2600#0" expanded="false" />
+            <element signature="e#2910#4092#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -641,10 +641,10 @@
             <element signature="e#1265#1326#0" expanded="false" />
             <element signature="e#1361#1821#0" expanded="false" />
             <element signature="e#1857#2320#0" expanded="false" />
-            <element signature="e#2347#5894#0" expanded="false" />
             <element signature="e#2384#2508#0" expanded="false" />
             <element signature="e#2417#2508#0" expanded="false" />
             <element signature="e#2553#2600#0" expanded="false" />
+            <element signature="e#2910#4092#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -684,10 +684,10 @@
             <element signature="e#1265#1326#0" expanded="false" />
             <element signature="e#1361#1821#0" expanded="false" />
             <element signature="e#1857#2320#0" expanded="false" />
-            <element signature="e#2347#5894#0" expanded="false" />
             <element signature="e#2384#2508#0" expanded="false" />
             <element signature="e#2417#2508#0" expanded="false" />
             <element signature="e#2553#2600#0" expanded="false" />
+            <element signature="e#2910#4092#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -705,10 +705,10 @@
             <element signature="e#1265#1326#0" expanded="false" />
             <element signature="e#1361#1821#0" expanded="false" />
             <element signature="e#1857#2320#0" expanded="false" />
-            <element signature="e#2347#5894#0" expanded="false" />
             <element signature="e#2384#2508#0" expanded="false" />
             <element signature="e#2417#2508#0" expanded="false" />
             <element signature="e#2553#2600#0" expanded="false" />
+            <element signature="e#2910#4092#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -733,22 +733,13 @@
     <entry file="file://$PROJECT_DIR$/test2.py" />
     <entry file="file://$PROJECT_DIR$/TextFiles/MarkovChainTester.py" />
     <entry file="file://$PROJECT_DIR$/TrumpChain.py" />
-    <entry file="file://$PROJECT_DIR$/WordChains.py">
+    <entry file="file://$PROJECT_DIR$/TextGeneratorApp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="78" column="13" lean-forward="false" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#174#387#0" expanded="false" />
-            <element signature="e#433#776#0" expanded="false" />
-            <element signature="e#821#1223#0" expanded="false" />
-            <element signature="e#1265#1326#0" expanded="false" />
-            <element signature="e#1361#1821#0" expanded="false" />
-            <element signature="e#1857#2320#0" expanded="false" />
-            <element signature="e#2347#5894#0" expanded="false" />
-            <element signature="e#2384#2508#0" expanded="false" />
-            <element signature="e#2417#2508#0" expanded="false" />
-            <element signature="e#2553#2600#0" expanded="false" />
+            <element signature="e#1#45#0" expanded="true" />
+            <element signature="e#1234#2193#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -769,13 +760,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TextGeneratorApp.py">
+    <entry file="file://$PROJECT_DIR$/WordChains.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="444">
+          <caret line="134" column="50" lean-forward="false" selection-start-line="134" selection-start-column="50" selection-end-line="134" selection-end-column="50" />
           <folding>
-            <element signature="e#1#45#0" expanded="true" />
-            <element signature="e#1234#2193#0" expanded="false" />
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#174#387#0" expanded="false" />
+            <element signature="e#433#776#0" expanded="false" />
+            <element signature="e#821#1223#0" expanded="false" />
+            <element signature="e#1265#1326#0" expanded="false" />
+            <element signature="e#1361#1821#0" expanded="false" />
+            <element signature="e#1857#2320#0" expanded="false" />
+            <element signature="e#2384#2508#0" expanded="false" />
+            <element signature="e#2417#2508#0" expanded="false" />
+            <element signature="e#2553#2600#0" expanded="false" />
+            <element signature="e#2910#4092#0" expanded="false" />
           </folding>
         </state>
       </provider>
