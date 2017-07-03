@@ -5,6 +5,7 @@ A Python tool for generating text using Markov chains
 
 #### WordChain.py
 Contains Python classes for analyzing text files and generating text
+
 Examples of functions:
 ```
 ksjdf
