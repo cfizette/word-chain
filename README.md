@@ -8,8 +8,8 @@ Contains Python classes for analyzing text files and generating text
 
 Examples of functions:
 ```
-ksjdf
-kjsdfk
+chain = MarkovChain()
+chain.get_words(txt, deg)
 ```
 
 #### Markov Chain Creator
