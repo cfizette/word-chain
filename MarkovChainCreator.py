@@ -5,7 +5,7 @@ import re
 import pickle
 import codecs
 import sys
-from WordChains import Word, WordNode, Chain, BinaryChain
+from WordChains import  WordNode, MarkovChain
 
 
 # use if getting ascii error... i guess...
@@ -27,7 +27,7 @@ txt = txt.replace('\n', ' ')
 #txt = txt.encode("utf-8").decode('unicode_escape').encode('ascii', 'ignore')
 
 #
-chain = BinaryChain()
+chain = MarkovChain()
 chain.get_words(txt, 1)
 chain.pickle('ShakespeareDeg1')
 

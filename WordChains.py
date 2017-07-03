@@ -76,7 +76,7 @@ class WordNode:
                 return self.right.find(txt)
 
 
-class BinaryChain:
+class MarkovChain:
 
     def get_capital_words(self):
         for w in self.words:

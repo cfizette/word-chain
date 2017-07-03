@@ -1,5 +1,5 @@
 
-from WordChains import BinaryChain
+from WordChains import MarkovChain
 
-chain = BinaryChain.unpickle('trumpSpeechesDeg2')
+chain = MarkovChain.unpickle('trumpSpeechesDeg2')
 chain.generate_text(None, 100)
