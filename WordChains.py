@@ -34,7 +34,7 @@ class WordNode:
             self.word_count[self.followers.index(word)] += 1  # increment word count
             self.update_probabilities()  # update probabilities
 
-    def choose_new_word(self):
+    def choose_next(self):
 
         return np.random.choice(self.followers, p=self.probabilities)
 
@@ -76,16 +76,16 @@ class WordNode:
                 return self.right.find(txt)
 
 
-class MarkovChain:
+class WordChain:
 
-    def get_capital_words(self):
+    def get_capitals(self):
         for w in self.words:
             if w.text[0].isupper() and w.text[1].islower():
-                self.capitalWords.append(w)
+                self.capitals.append(w)
 
     def __init__(self, root=None):
         self.root = root
-        self.capitalWords = []
+        self.capitals = []
 
     def pickle(self, filename):
         f = file(filename, 'wb')
@@ -107,7 +107,6 @@ class MarkovChain:
         for i in range(0, degree):
             node = WordNode(' '.join(TXT[i:degree+i]))
             root.add(node)
-            # New Method----
             frame.append(node)
 
         # Add the rest of the tokens
@@ -119,12 +118,13 @@ class MarkovChain:
             if old_instance is None:
                 new_node = WordNode(s)
                 root.add(new_node)
+                # Assume capital words are sentence starters
                 if degree == 1:
                     if s[0].isupper():
-                        self.capitalWords.append(s)
+                        self.capitals.append(s)
 
                 elif s[0].isupper() and s[1].islower():
-                    self.capitalWords.append(s)
+                    self.capitals.append(s)
             else:
                 new_node = old_instance   # make sure the old object is the one getting changed
             frame.append(new_node)
@@ -132,12 +132,12 @@ class MarkovChain:
             frame.pop(0)  # remove first element, frame is now back to original length
         self.root = root
 
-    def generate_text(self, seed_array, num, continuous=True, print_to_console=False):
+    def generate_text(self, seed_array=None, num=50, continuous=True, print_to_console=False):
         generated = 0
         text = ''  # Text to be returned
 
         if seed_array is None:  # if no seed is given, choose a starting phrase from the markov chain
-            word = self.root.find(np.random.choice(self.capitalWords))
+            word = self.root.find(np.random.choice(self.capitals))
         else:
             seed = np.random.choice(seed_array)  # seed_array is a list of strings
             word = self.root.find(seed)  # find a node with that string associated with it
@@ -146,7 +146,7 @@ class MarkovChain:
             sent = word.text
 
             while True:
-                string = word.choose_new_word()  # choose next word
+                string = word.choose_next()  # choose next word
                 nextWord = self.root.find(string)  # find the object corresponding to the chosen word
                 sent = sent + ' ' + nextWord.text  # append new word to text
                 word = nextWord
@@ -160,18 +160,113 @@ class MarkovChain:
 
             if not continuous:  # new starting phrase chosen from list of all starting phrases
                 if seed_array is None:  # if no seed is given, choose a starting phrase from the markov chain
-                    word = self.root.find(np.random.choice(self.capitalWords))
+                    word = self.root.find(np.random.choice(self.capitals))
                 else:
                     seed = np.random.choice(seed_array)
                     word = self.root.find(seed)
             else:                # new starting phrase chosen from current node
-                string = word.choose_new_word()
+                string = word.choose_next()
                 word = self.root.find(string)
 
         return text
 
 
+class LetterChain:
 
+    # I don't think this is used anywhere......
+    def get_capitals(self):
+        for w in self.words:
+            if w.text[0].isupper() and w.text[1].islower():
+                self.capitals.append(w)
+
+    def __init__(self, root=None):
+        self.root = root
+        self.capitals = []
+
+    def pickle(self, filename):
+        f = file(filename, 'wb')
+        cPickle.dump(self, f, pickle.HIGHEST_PROTOCOL)
+        f.close()
+
+    @staticmethod
+    def unpickle(filename):
+        with file(filename, 'rb') as f:
+            return cPickle.load(f)
+
+    def get_letters(self, TXT, degree):
+        TXT = list(TXT)
+        frame = []
+        root = WordNode(''.join(TXT[0:degree]))
+
+        # Add the start of the sequence to get it going
+        for i in range(0, degree):
+            node = WordNode(''.join(TXT[i:degree + i]))
+            root.add(node)
+            frame.append(node)
+
+        # Add the rest of the tokens
+        for i in range(degree, len(TXT)):
+            if i % 1000 == 0:
+                print i
+            s = ''.join(TXT[i:i + degree])
+            old_instance = root.find(s)
+            if old_instance is None:
+                new_node = WordNode(s)
+                root.add(new_node)
+
+                if degree == 1:
+                    if s[0].isupper():
+                        self.capitals.append(s)
+
+                elif s[0].isupper() and s[1].islower():
+                    self.capitals.append(s)
+            else:
+                new_node = old_instance  # make sure the old object is the one getting changed
+            frame.append(new_node)
+            frame[0].add_followers(s)
+            frame.pop(0)  # remove first element, frame is now back to original length
+        self.root = root
+
+    def generate_text(self, seed_array=None, num=50, continuous=True, print_to_console=False):
+
+        # Copied code from WordChain. In this function "word" means "letters". I'm too lazy to fix this and no one will
+        # probably ever see this anyways
+        generated = 0
+        text = ''  # Text to be returned
+
+        if seed_array is None:  # if no seed is given, choose a starting phrase from the markov chain
+            word = self.root.find(np.random.choice(self.capitals))
+        else:
+            seed = np.random.choice(seed_array)  # seed_array is a list of strings
+            word = self.root.find(seed)  # find a node with that string associated with it
+
+        while generated < num:
+            sent = word.text
+
+            while True:
+                string = word.choose_next()  # choose next letters
+                nextWord = self.root.find(string)  # find the object corresponding to the chosen letters
+                sent = sent + nextWord.text  # append new letters to text
+                word = nextWord
+                if nextWord.text.endswith('.'):  # text ends when a sentence ends on a period
+                    if print_to_console:
+                        print sent
+                    text = text + sent + '\n\n'  # Add to generated text and start a new line
+                    break
+
+            generated += 1
+
+            if not continuous:  # new starting phrase chosen from list of all starting phrases
+                if seed_array is None:  # if no seed is given, choose a starting phrase from the markov chain
+                    word = self.root.find(np.random.choice(self.capitals))
+                else:
+                    seed = np.random.choice(seed_array)
+                    word = self.root.find(seed)
+            else:                # new starting phrase chosen from current node
+                string = word.choose_next()
+                word = self.root.find(string)
+
+        return text
 
 
 

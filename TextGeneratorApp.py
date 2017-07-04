@@ -1,5 +1,5 @@
 
-from WordChains import WordNode, MarkovChain
+from WordChains import WordNode, WordChain
 from Tkinter import *
 from ScrolledText import ScrolledText
 import timeit
@@ -8,25 +8,25 @@ import timeit
 # Load the markov chains
 print 'Loading RRMartin...'
 start_time = timeit.default_timer()
-RRMartinDeg2 = MarkovChain.unpickle('MarkovChains/RRMartinDeg2')
+RRMartinDeg2 = WordChain.unpickle('MarkovChains/RRMartinDeg2')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 print 'Loading Trump...'
 start_time = timeit.default_timer()
-TrumpDeg2 = MarkovChain.unpickle('MarkovChains/TrumpSpeechesDeg2')
-TrumpDeg1 = MarkovChain.unpickle('MarkovChains/TrumpSpeechesDeg1')
+TrumpDeg2 = WordChain.unpickle('MarkovChains/TrumpSpeechesDeg2')
+TrumpDeg1 = WordChain.unpickle('MarkovChains/TrumpSpeechesDeg1')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 print 'Loading Shakespeare...'
 start_time = timeit.default_timer()
-ShakespeareDeg2 = MarkovChain.unpickle('MarkovChains/ShakespeareDeg2')
-ShakespeareDeg1 = MarkovChain.unpickle('MarkovChains/ShakespeareDeg1')
+ShakespeareDeg2 = WordChain.unpickle('MarkovChains/ShakespeareDeg2')
+ShakespeareDeg1 = WordChain.unpickle('MarkovChains/ShakespeareDeg1')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 print 'Loading Hillary...'
 start_time = timeit.default_timer()
-HillaryDeg2 = MarkovChain.unpickle('MarkovChains/HillarySpeechesDeg2')
-HillaryDeg1 = MarkovChain.unpickle('MarkovChains/HillarySpeechesDeg1')
+HillaryDeg2 = WordChain.unpickle('MarkovChains/HillarySpeechesDeg2')
+HillaryDeg1 = WordChain.unpickle('MarkovChains/HillarySpeechesDeg1')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 # Initialize tkinter stuff
