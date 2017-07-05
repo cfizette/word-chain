@@ -1,5 +1,5 @@
 
-from WordChains import WordNode, WordChain
+from WordChains import WordChainOld
 from Tkinter import *
 from ScrolledText import ScrolledText
 import timeit
@@ -8,25 +8,26 @@ import timeit
 # Load the markov chains
 print 'Loading RRMartin...'
 start_time = timeit.default_timer()
-RRMartinDeg2 = WordChain.unpickle('MarkovChains/RRMartinDeg2')
+RRMartinDeg1 = WordChainOld.unpickle('MarkovChains/RRMartinDeg1')
+RRMartinDeg2 = WordChainOld.unpickle('MarkovChains/RRMartinDeg2')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 print 'Loading Trump...'
 start_time = timeit.default_timer()
-TrumpDeg2 = WordChain.unpickle('MarkovChains/TrumpSpeechesDeg2')
-TrumpDeg1 = WordChain.unpickle('MarkovChains/TrumpSpeechesDeg1')
+TrumpDeg2 = WordChainOld.unpickle('MarkovChains/TrumpSpeechesDeg2')
+TrumpDeg1 = WordChainOld.unpickle('MarkovChains/TrumpSpeechesDeg1')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 print 'Loading Shakespeare...'
 start_time = timeit.default_timer()
-ShakespeareDeg2 = WordChain.unpickle('MarkovChains/ShakespeareDeg2')
-ShakespeareDeg1 = WordChain.unpickle('MarkovChains/ShakespeareDeg1')
+ShakespeareDeg2 = WordChainOld.unpickle('MarkovChains/ShakespeareDeg2')
+ShakespeareDeg1 = WordChainOld.unpickle('MarkovChains/ShakespeareDeg1')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 print 'Loading Hillary...'
 start_time = timeit.default_timer()
-HillaryDeg2 = WordChain.unpickle('MarkovChains/HillarySpeechesDeg2')
-HillaryDeg1 = WordChain.unpickle('MarkovChains/HillarySpeechesDeg1')
+HillaryDeg2 = WordChainOld.unpickle('MarkovChains/HillarySpeechesDeg2')
+HillaryDeg1 = WordChainOld.unpickle('MarkovChains/HillarySpeechesDeg1')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 # Initialize tkinter stuff
@@ -39,7 +40,10 @@ def generate():
     print 'attempting to generate text'
     print option.get()
     if option.get() == 1:
-        text.insert('1.0', RRMartinDeg2.generate_text(None, 100, continuous=True))
+        if degree.get() == 1:
+            text.insert('1.0', RRMartinDeg1.generate_text(None, 100, continuous=True))
+        elif degree.get() == 2:
+            text.insert('1.0', RRMartinDeg2.generate_text(None, 100, continuous=True))
     elif option.get() == 2:
         if degree.get() == 1:
             text.insert('1.0', TrumpDeg1.generate_text(None, 100, continuous=True))
