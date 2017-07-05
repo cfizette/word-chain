@@ -8,12 +8,12 @@ Contains Python classes for analyzing text files and generating text
 
 Examples of functions:
 ```
-# creating a markov chain of degree d from string txt
-chain = MarkovChain()
+# creating a markov chain of words of degree d from string txt
+chain = WordChain()
 chain.get_words(txt, d)
 ```
 ```
-# generating text from a MarkovChain object
+# generating text from a WordChain object
 chain.generate_text()
 ```
 
@@ -28,5 +28,5 @@ Sample application to show the results of text generation using Markov chains. I
 
 ## Things that need work
 -Formatting
--Speed
+-~~Speed~~
 -Larger Datasets
