@@ -1,7 +1,4 @@
 import numpy as np
-from nltk.tokenize import word_tokenize
-import numpy as np
-import re
 import pickle
 import cPickle
 
@@ -205,10 +202,9 @@ class WordChain:
         with file(filename, 'rb') as f:
             return cPickle.load(f)
 
-    def get_words(self, TXT, degree):
-
-        TXT = word_tokenize(TXT)
-        frame = []  # contains object references for fast modifications
+    def get_words(self, TXT , degree):
+        TXT = TXT.split()
+        frame = []
         dic = self.dic
         dic[' '.join(TXT[0:degree])] = WordNode(' '.join(TXT[0:degree]))
 
@@ -385,7 +381,7 @@ class WordChainOld:
 
     def get_words(self, TXT, degree):
 
-        TXT = word_tokenize(TXT)
+        TXT = TXT.split()
         frame = []  # contains object references for fast modifications
         dic = self.dic
         dic[' '.join(TXT[0:degree])] = WordNodeOld(' '.join(TXT[0:degree]))

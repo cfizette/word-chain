@@ -28,13 +28,13 @@ txt = txt.replace('\n', ' ')
 #txt = txt.encode("utf-8").decode('unicode_escape').encode('ascii', 'ignore')
 
 #
-chain = WordChainOld()
+chain = WordChain()
 start_time = timeit.default_timer()
 chain.get_words(txt, 2)
 time = (timeit.default_timer() - start_time)
-#chain.generate_text(print_to_console=True)
+chain.generate_text(print_to_console=True)
 print 'Elapsed time: ', time
-chain.pickle('RRMartinDeg2')
+#chain.pickle('RRMartinDeg2')
 
 
 
