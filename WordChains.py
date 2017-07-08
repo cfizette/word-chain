@@ -77,13 +77,7 @@ class WordNode:
 
 class LetterChain:
 
-    # I don't think this is used anywhere......
-    def get_capitals(self):
-        for w in self.words:
-            if w.text[0].isupper() and w.text[1].islower():
-                self.capitals.append(w)
-
-    def __init__(self, dic=None):
+    def __init__(self):
         self.dic = {}
         self.capitals = []
 
@@ -97,7 +91,14 @@ class LetterChain:
         with file(filename, 'rb') as f:
             return cPickle.load(f)
 
+    # --------------------------------------
+    # Extract Markov Chain from sample text
+    # --------------------------------------
     def get_letters(self, TXT, degree):
+
+        # TXT: String of text to analyze. May require prepossessing.
+        # degree: Degree of Markov Chain to be created.
+
         TXT = list(TXT)
         frame = []  # contains object references for fast modifications
         dic = self.dic
@@ -141,54 +142,56 @@ class LetterChain:
 
         self.dic = dic
 
+    # --------------------------------------
+    # Generate text from Markov Chain
+    # --------------------------------------
     def generate_text(self, seed_array=None, num=50, continuous=True, print_to_console=False):
 
-        # Copied code from WordChain. In this function "word" means "letters". I'm too lazy to fix this and no one will
-        # probably ever see this anyways
+        # seed_array: A list of strings used to start sentences
+        # num:        Number of iterations. Multiple sentences may be generated each iteration
+        # continuous: If true then each iteration will take into account the ending of the previous iteration when
+        #             beginning a new sentence
+
         generated = 0
-        text = ''  # Text to be returned
-        if seed_array is None:  # if no seed is given, choose a starting phrase from the markov chain
-            word = self.dic[np.random.choice(self.capitals)]
+        text = ''
+
+        # If no seed is given, choose a starting phrase from the markov chain
+        if seed_array is None:
+            letters = self.dic[np.random.choice(self.capitals)]
         else:
-            seed = np.random.choice(seed_array)  # seed_array is a list of strings
-            word = self.dic[seed]  # find a node with that string associated with it
+            seed = np.random.choice(seed_array)
+            letters = self.dic[seed]
 
+        # Generate text
         while generated < num:
-            sent = word.text
-
+            sent = letters.text
             while True:
-                string = word.choose_next()  # choose next word
-                nextWord = self.dic[string]  # find the object corresponding to the chosen word
-                sent = sent + nextWord.text  # append new word to text
-                word = nextWord
+                string = letters.choose_next()  # choose next letters
+                nextWord = self.dic[string]  # find the object corresponding to the chosen letters
+                sent = sent + nextWord.text  # append new letters to text
+                letters = nextWord
                 if nextWord.text.endswith('.'):  # text ends when a sentence ends on a period
                     if print_to_console:
                         print sent
                     text = text + sent + '\n\n'  # Add to generated text and start a new line
                     break
-
             generated += 1
 
             if not continuous:  # new starting phrase chosen from list of all starting phrases
                 if seed_array is None:  # if no seed is given, choose a starting phrase from the markov chain
-                    word = self.dic[np.random.choice(self.capitals)]
+                    letters = self.dic[np.random.choice(self.capitals)]
                 else:
                     seed = np.random.choice(seed_array)
-                    word = self.dic[seed]
+                    letters = self.dic[seed]
             else:                # new starting phrase chosen from current node
-                string = word.choose_next()
-                word = self.dic[string]
+                string = letters.choose_next()
+                letters = self.dic[string]
         return text
 
 
 class WordChain:
 
-    def get_capitals(self):
-        for w in self.words:
-            if w.text[0].isupper() and w.text[1].islower():
-                self.capitals.append(w)
-
-    def __init__(self, dic=None):
+    def __init__(self):
         self.dic = {}
         self.capitals = []
 
@@ -202,7 +205,13 @@ class WordChain:
         with file(filename, 'rb') as f:
             return cPickle.load(f)
 
-    def get_words(self, TXT , degree):
+    # --------------------------------------
+    # Extract Markov Chain from sample text
+    # --------------------------------------
+    def get_words(self, TXT, degree):
+        # TXT: String of text to analyze. May require prepossessing.
+        # degree: Degree of Markov Chain to be created. Unless corpus really really really large, don't use more than 2.
+
         TXT = TXT.split()
         frame = []
         dic = self.dic
@@ -213,8 +222,6 @@ class WordChain:
             s = ' '.join(TXT[i:degree+i])
             node = WordNode(s)
             dic[s] = node
-            #frame.append(node)
-
             frame.append(s)
 
         # Add the rest of the tokens
@@ -246,19 +253,29 @@ class WordChain:
 
         self.dic = dic
 
+    # --------------------------------------
+    # Generate text from Markov Chain
+    # --------------------------------------
     def generate_text(self, seed_array=None, num=50, continuous=True, print_to_console=False):
-        generated = 0
-        text = ''  # Text to be returned
 
-        if seed_array is None:  # if no seed is given, choose a starting phrase from the markov chain
+        # seed_array: A list of strings used to start sentences
+        # num:        Number of iterations. Multiple sentences may be generated each iteration
+        # continuous: If true then each iteration will take into account the ending of the previous iteration when
+        #             beginning a new sentence
+
+        generated = 0
+        text = ''
+
+        # If no seed is given, choose a starting phrase from the markov chain
+        if seed_array is None:
             word = self.dic[np.random.choice(self.capitals)]
         else:
-            seed = np.random.choice(seed_array)  # seed_array is a list of strings
-            word = self.dic[seed]  # find a node with that string associated with it
+            seed = np.random.choice(seed_array)
+            word = self.dic[seed]
 
+        # Generate text
         while generated < num:
             sent = word.text
-
             while True:
                 string = word.choose_next()  # choose next word
                 nextWord = self.dic[string]  # find the object corresponding to the chosen word
@@ -269,7 +286,6 @@ class WordChain:
                         print sent
                     text = text + sent + '\n\n'  # Add to generated text and start a new line
                     break
-
             generated += 1
 
             if not continuous:  # new starting phrase chosen from list of all starting phrases

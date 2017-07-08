@@ -1,9 +1,4 @@
-import numpy as np
-from nltk.tokenize import word_tokenize
-import numpy as np
-import re
-import pickle
-import codecs
+
 import timeit
 import sys
 from WordChains import  WordNode, WordChain, LetterChain, WordChainOld
