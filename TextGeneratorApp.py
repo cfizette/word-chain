@@ -8,26 +8,26 @@ import timeit
 # Load the markov chains
 print 'Loading RRMartin...'
 start_time = timeit.default_timer()
-RRMartinDeg1 = WordChainOld.unpickle('MarkovChains/RRMartinDeg1')
-RRMartinDeg2 = WordChainOld.unpickle('MarkovChains/RRMartinDeg2')
+RRMartinDeg1 = WordChainOld.unpickle('MarkovChainsLegacy/CompleteRRMartinDeg1_L')
+RRMartinDeg2 = WordChainOld.unpickle('MarkovChainsLegacy/CompleteRRMartinDeg2_L')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 print 'Loading Trump...'
 start_time = timeit.default_timer()
-TrumpDeg2 = WordChainOld.unpickle('MarkovChains/TrumpSpeechesDeg2')
-TrumpDeg1 = WordChainOld.unpickle('MarkovChains/TrumpSpeechesDeg1')
+TrumpDeg2 = WordChainOld.unpickle('MarkovChainsLegacy/TrumpSpeechesDeg2_L')
+TrumpDeg1 = WordChainOld.unpickle('MarkovChainsLegacy/TrumpSpeechesDeg1_L')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 print 'Loading Shakespeare...'
 start_time = timeit.default_timer()
-ShakespeareDeg2 = WordChainOld.unpickle('MarkovChains/ShakespeareDeg2')
-ShakespeareDeg1 = WordChainOld.unpickle('MarkovChains/ShakespeareDeg1')
+ShakespeareDeg2 = WordChainOld.unpickle('MarkovChainsLegacy/ShakespeareDeg2_L')
+ShakespeareDeg1 = WordChainOld.unpickle('MarkovChainsLegacy/ShakespeareDeg1_L')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 print 'Loading Hillary...'
 start_time = timeit.default_timer()
-HillaryDeg2 = WordChainOld.unpickle('MarkovChains/HillarySpeechesDeg2')
-HillaryDeg1 = WordChainOld.unpickle('MarkovChains/HillarySpeechesDeg1')
+HillaryDeg2 = WordChainOld.unpickle('MarkovChainsLegacy/HillarySpeechesDeg2_L')
+HillaryDeg1 = WordChainOld.unpickle('MarkovChainsLegacy/HillarySpeechesDeg1_L')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 # Initialize tkinter stuff

@@ -12,8 +12,6 @@ class WordNode:
         self.dic = {}  # dic used to check if follower exists, faster than checking whole follower list
         self.word_count = []
         self.probabilities = []
-        self.left = None
-        self.right = None
 
     def update_probabilities(self):
         total_word_count = sum(self.word_count)

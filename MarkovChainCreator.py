@@ -6,10 +6,10 @@ from WordChains import  WordNode, WordChain, LetterChain, WordChainOld
 
 # use if getting ascii error... i guess...
 reload(sys)
-sys.setdefaultencoding('utf8')
+#sys.setdefaultencoding('utf8')
 
 
-text_file = open('TextFiles/CompleteRRMartin.txt', 'r')
+text_file = open('TextFiles/TrimmedRRMartin.txt', 'r')
 txt = text_file.read()
 print txt
 
@@ -27,9 +27,11 @@ chain = WordChain()
 start_time = timeit.default_timer()
 chain.get_words(txt, 2)
 time = (timeit.default_timer() - start_time)
-chain.generate_text(print_to_console=True)
+#chain.generate_text(print_to_console=True)
 print 'Elapsed time: ', time
-#chain.pickle('RRMartinDeg2')
+# for key, words in chain.dic.items():
+#     print words.followers
+chain.pickle('MarkovChains2.0/CompleteRRMartinDeg2')
 
 
 
