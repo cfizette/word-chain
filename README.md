@@ -27,6 +27,6 @@ Script for testing the text generated from a Markov chain created using the Mark
 Sample application to show the results of text generation using Markov chains. Includes generators for Donald Trump, Hillary Clinton, Shakespeare, and George R.R. Martin. Can also choose between 1st order and 2nd order Markov chains for Trump, Clinton, and Shakespeare.
 
 ## Things that need work
--[x] Formatting
--[x] Speed
--[] Larger Datasets
+- [x] Formatting
+- [x] Speed
+- [] Larger Datasets
