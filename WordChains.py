@@ -225,7 +225,6 @@ class WordChain:
             test = True
             for line in lines:
                 if first_line:
-                    print 'hi'
                     self.capitals = line.split('|')
                     first_line = False
                 else:
@@ -239,8 +238,6 @@ class WordChain:
                     # word.word_count = split_line[2].split('|')
                     self.dic[split_line[0]].word_count = split_line[2].split('|')
                     probs = split_line[3].split('|')
-                    print split_line[0]
-                    print probs
                     # word.probabilities = [float(p) for p in probs]
                     try:
                         self.dic[split_line[0]].probabilities = [float(p) for p in probs]

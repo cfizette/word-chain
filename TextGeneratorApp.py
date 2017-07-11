@@ -1,8 +1,13 @@
 
-from WordChains import WordChainOld
+from WordChains import WordChainOld, WordChain
 from Tkinter import *
 from ScrolledText import ScrolledText
 import timeit
+
+# Initialize tkinter stuff
+root = Tk()
+option = IntVar()
+degree = IntVar()
 
 
 # Load the markov chains
@@ -10,6 +15,8 @@ print 'Loading RRMartin...'
 start_time = timeit.default_timer()
 RRMartinDeg1 = WordChainOld.unpickle('MarkovChainsLegacy/CompleteRRMartinDeg1_L')
 RRMartinDeg2 = WordChainOld.unpickle('MarkovChainsLegacy/CompleteRRMartinDeg2_L')
+# RRMartinDeg1 = WordChain().from_csv('MarkovChains2.0/CompleteRRMartinDeg1.txt')
+# RRMartinDeg2 = WordChain().from_csv('MarkovChains2.0/CompleteRRMartinDeg2.txt')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
 print 'Loading Trump...'
@@ -30,35 +37,30 @@ HillaryDeg2 = WordChainOld.unpickle('MarkovChainsLegacy/HillarySpeechesDeg2_L')
 HillaryDeg1 = WordChainOld.unpickle('MarkovChainsLegacy/HillarySpeechesDeg1_L')
 print 'Elapsed time: ', (timeit.default_timer() - start_time)
 
-# Initialize tkinter stuff
-root = Tk()
-option = IntVar()
-degree = IntVar()
-
 
 def generate():
     print 'attempting to generate text'
     print option.get()
     if option.get() == 1:
         if degree.get() == 1:
-            text.insert('1.0', RRMartinDeg1.generate_text(None, 100, continuous=True))
+            text.insert('1.0', RRMartinDeg1.generate_text(None, 5, continuous=True))
         elif degree.get() == 2:
-            text.insert('1.0', RRMartinDeg2.generate_text(None, 100, continuous=True))
+            text.insert('1.0', RRMartinDeg2.generate_text(None, 5, continuous=True))
     elif option.get() == 2:
         if degree.get() == 1:
-            text.insert('1.0', TrumpDeg1.generate_text(None, 100, continuous=True))
+            text.insert('1.0', TrumpDeg1.generate_text(None, 5, continuous=True))
         elif degree.get() == 2:
-            text.insert('1.0', TrumpDeg2.generate_text(None, 100, continuous=True))
+            text.insert('1.0', TrumpDeg2.generate_text(None, 5, continuous=True))
     elif option.get() == 3:
         if degree.get() == 1:
-            text.insert('1.0', HillaryDeg1.generate_text(None, 100, continuous=True))
+            text.insert('1.0', HillaryDeg1.generate_text(None, 5, continuous=True))
         elif degree.get() == 2:
-            text.insert('1.0', HillaryDeg2.generate_text(None, 100, continuous=True))
+            text.insert('1.0', HillaryDeg2.generate_text(None, 5, continuous=True))
     elif option.get() == 4:
         if degree.get() == 1:
-            text.insert('1.0', ShakespeareDeg1.generate_text(None, 100, continuous=True))
+            text.insert('1.0', ShakespeareDeg1.generate_text(None, 5, continuous=True))
         elif degree.get() == 2:
-            text.insert('1.0', ShakespeareDeg2.generate_text(None, 100, continuous=True))
+            text.insert('1.0', ShakespeareDeg2.generate_text(None, 5, continuous=True))
 
 # Create Gui---------------------------------------------
 # create and pack frames

@@ -9,7 +9,7 @@ reload(sys)
 #sys.setdefaultencoding('utf8')
 
 
-text_file = open('TextFiles/TrimmedRRMartin.txt', 'r')
+text_file = open('TextFiles/CompleteRRMartin.txt', 'r')
 txt = text_file.read()
 print txt
 
@@ -25,13 +25,13 @@ txt = txt.replace('\n', ' ')
 #
 chain = WordChain()
 start_time = timeit.default_timer()
-chain.get_words(txt, 2)
+chain.get_words(txt, 1)
 time = (timeit.default_timer() - start_time)
-#chain.generate_text(print_to_console=True)
+chain.generate_text(print_to_console=True)
 print 'Elapsed time: ', time
 # for key, words in chain.dic.items():
 #     print words.followers
-#chain.pickle('MarkovChains2.0/CompleteRRMartinDeg2')
+chain.to_csv('MarkovChains2.0/CompleteRRMartinDeg1.txt')
 
 
 
