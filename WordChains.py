@@ -198,6 +198,57 @@ class WordChain:
         cPickle.dump(self, f, pickle.HIGHEST_PROTOCOL)
         f.close()
 
+    def to_csv(self, filelocation = "WordChain.txt"):
+        with open(filelocation, 'w') as f:
+            # First line contains capitals
+            f.write('|'.join(self.capitals) + '\n')
+            for word in self.dic.values():
+                # Word text
+                f.write(word.text + '|_|')
+                # List of followers, used for followers and dic
+                f.write('|'.join(word.followers) + '|_|')
+                # List of wordcount
+                f.write('|'.join(map(str, word.word_count)) + '|_|')
+                # List of probabilities
+                f.write('|'.join(map(str, word.probabilities)) + '\n')
+
+    def from_csv(self, filelocation = None):
+        if filelocation is None:
+            print('Please enter a file location...')
+            return
+
+        with open(filelocation, 'r') as f:
+            lines = f.readlines()
+
+            lines = [l.strip() for l in lines]
+            first_line = True
+            test = True
+            for line in lines:
+                if first_line:
+                    print 'hi'
+                    self.capitals = line.split('|')
+                    first_line = False
+                else:
+                    split_line = line.split('|_|')
+                    self.dic[split_line[0]] = WordNode(split_line[0])
+                    # word = WordNode(split_line[0])
+                    # word.followers = split_line[1].split('|')
+                    self.dic[split_line[0]].followers = split_line[1].split('|')
+                    # word.dic = dict(zip(word.followers, [1]*len(word.followers)))
+                    self.dic[split_line[0]].dic = dict(zip(self.dic[split_line[0]].followers, [1] * len(self.dic[split_line[0]].followers)))
+                    # word.word_count = split_line[2].split('|')
+                    self.dic[split_line[0]].word_count = split_line[2].split('|')
+                    probs = split_line[3].split('|')
+                    print split_line[0]
+                    print probs
+                    # word.probabilities = [float(p) for p in probs]
+                    try:
+                        self.dic[split_line[0]].probabilities = [float(p) for p in probs]
+                    except ValueError:
+                        pass
+
+                    # self.dic[word.text] = word
+
     @staticmethod
     def unpickle(filename):
         with file(filename, 'rb') as f:

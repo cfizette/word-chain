@@ -31,7 +31,7 @@ time = (timeit.default_timer() - start_time)
 print 'Elapsed time: ', time
 # for key, words in chain.dic.items():
 #     print words.followers
-chain.pickle('MarkovChains2.0/CompleteRRMartinDeg2')
+#chain.pickle('MarkovChains2.0/CompleteRRMartinDeg2')
 
 
 
