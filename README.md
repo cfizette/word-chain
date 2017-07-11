@@ -29,4 +29,4 @@ Sample application to show the results of text generation using Markov chains. I
 ## Things that need work
 - [x] Formatting
 - [x] Speed
-- [] Larger Datasets
+- [ ] Larger Datasets
