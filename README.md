@@ -30,3 +30,4 @@ Sample application to show the results of text generation using Markov chains. I
 - [x] Formatting
 - [x] Speed
 - [ ] Larger Datasets
+- [ ] Add saving to text file to LetterChain
